@@ -109,6 +109,7 @@ rm("trDt","teDt") # Release memory
 ######### TIDY DATA: AVERAGE OF EACH VARIABLE FOR EACH ACTIVITY AND SUBJECT ####
 
 library(dplyr)
+library(tidyr)
 tidyAvgARDt <- # Final result variable
 mergeDt %>% # Use chain operations
     # Gather the measurements in single variable MEASUREMENT and the measured
